@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:~/exchange-db
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true
+custom-feign:
+    default-user-agent: PostmanRuntime/7.28.4
+exchange:
+  apikeys:
+    free-currency: 3d623560-599f-11ec-b18a-0db676b82c63
+    exchange-io: beaa7bd6cda67bbc31689b3f0ae27661
+    exchangerate-api: 7c4be2109045b8b539c421b6
